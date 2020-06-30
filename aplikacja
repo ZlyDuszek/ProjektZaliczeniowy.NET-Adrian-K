@@ -1,0 +1,847 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Witam, aplikacja może i jest prostacko łatwa i dało by się ją usprawnić (klasy, metody, itd), ale tak średnio miałem czas i zdolności//
+            int x = 0;
+            do
+            {
+                int a;
+                Console.WriteLine("Co chcialbys/chcialabys zrobic?");
+                Console.WriteLine("1.) Dodawanie");
+                Console.WriteLine("2.) Odejmowanie");
+                Console.WriteLine("3.) Mnozenie");
+                Console.WriteLine("4.) Dzielenie");
+                Console.WriteLine("5.) Potega");
+                Console.WriteLine("6.) Pierwiastek");
+                Console.WriteLine("7.) Pola");
+                Console.WriteLine("8.) Obwody");
+                Console.WriteLine("9.) Objetosci");
+                Console.WriteLine("10.) Funkcje Liniowa");
+                Console.WriteLine("Twoj wybor to:");
+                string b = Console.ReadLine();
+                a = int.Parse(b);
+                if (a == 1)
+                {
+                    Console.WriteLine("Podaj pierwsza liczbe:");
+                    string c = Console.ReadLine();
+                    float d = float.Parse(c);
+                    Console.WriteLine("Podaj druga liczbe:");
+                    string e = Console.ReadLine();
+                    float f = float.Parse(e);
+                    float g = (d + f);
+                    Console.WriteLine("Wynik to: " + g);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string h = Console.ReadLine();
+                    int i = int.Parse(h);
+                    if (i == 1)
+                    {
+
+                    }
+                    else if (i == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 2)
+                {
+                    Console.WriteLine("Podaj pierwsza liczbe:");
+                    string c = Console.ReadLine();
+                    float d = float.Parse(c);
+                    Console.WriteLine("Podaj druga liczbe:");
+                    string e = Console.ReadLine();
+                    float f = float.Parse(e);
+                    float g = (d - f);
+                    Console.WriteLine("Wynik to: " + g);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string h = Console.ReadLine();
+                    int i = int.Parse(h);
+                    if (i == 1)
+                    {
+
+                    }
+                    else if (i == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 3)
+                {
+                    Console.WriteLine("Podaj pierwsza liczbe:");
+                    string c = Console.ReadLine();
+                    float d = float.Parse(c);
+                    Console.WriteLine("Podaj druga liczbe:");
+                    string e = Console.ReadLine();
+                    float f = float.Parse(e);
+                    float g = (d * f);
+                    Console.WriteLine("Wynik to: " + g);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string h = Console.ReadLine();
+                    int i = int.Parse(h);
+                    if (i == 1)
+                    {
+
+                    }
+                    else if (i == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 4)
+                {
+                    Console.WriteLine("Podaj pierwsza liczbe:");
+                    string c = Console.ReadLine();
+                    float d = float.Parse(c);
+                    Console.WriteLine("Podaj druga liczbe:");
+                    string e = Console.ReadLine();
+                    float f = float.Parse(e);
+                    float g = (d / f);
+                    Console.WriteLine("Wynik to: " + g);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string h = Console.ReadLine();
+                    int i = int.Parse(h);
+                    if (i == 1)
+                    {
+
+                    }
+                    else if (i == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 5)
+                {
+                    Console.WriteLine("Podaj pierwsza liczbe:");
+                    string c = Console.ReadLine();
+                    double d = float.Parse(c);
+                    Console.WriteLine("Podaj druga liczbe:");
+                    string e = Console.ReadLine();
+                    double f = float.Parse(e);
+                    double g = Math.Pow(d, f);
+                    Console.WriteLine("Wynik to: " + g);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string h = Console.ReadLine();
+                    int i = int.Parse(h);
+                    if (i == 1)
+                    {
+
+                    }
+                    else if (i == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 6)
+                {
+                    Console.WriteLine("Podaj liczbe, ktora chcesz pierwiastkowac:");
+                    string c = Console.ReadLine();
+                    double d = float.Parse(c);
+                    double f = Math.Sqrt(d);
+                    Console.WriteLine("Wynik to: " + d);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string e = Console.ReadLine();
+                    int g = int.Parse(e);
+                    if (g == 1)
+                    {
+
+                    }
+                    else if (g == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 7)
+                {
+                    int c;
+                    Console.WriteLine("Pole jakiej figury chcesz obliczyc?");
+                    Console.WriteLine("1.) Kwadrat");
+                    Console.WriteLine("2.) Prostokat");
+                    Console.WriteLine("3.) Trojkat");
+                    Console.WriteLine("4.) Romb");
+                    Console.WriteLine("5.) Rownoleglobok");
+                    Console.WriteLine("6.) Trapez");
+                    Console.WriteLine("7.) Kolo");
+                    Console.WriteLine("Twoj wybor to:");
+                    string d = Console.ReadLine();
+                    c = int.Parse(d);
+                    if (c == 1)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        float g = f * f;
+                        Console.WriteLine("Wynik to: " + g);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string h = Console.ReadLine();
+                        int i = int.Parse(h);
+                        if (i == 1)
+                        {
+
+                        }
+                        else if (i == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 2)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku a:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj długosc boku b:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = f * h;
+                        Console.WriteLine("Wynik to: " + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if(c == 3)
+                    {
+                        Console.WriteLine("Podaj dlugosc podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc wysokosci:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = (f * h) / 2;
+                        Console.WriteLine("Wynik to: " + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+
+                    }
+                    else if (c == 4)
+                    {
+                        Console.WriteLine("Podaj dlugosc podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc wysokosci:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = f * h;
+                        Console.WriteLine("Wynik to: " + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 5)
+                    {
+                        Console.WriteLine("Podaj dlugosc podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc wysokosci:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = f * h;
+                        Console.WriteLine("Wynik to: " + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 6)
+                    {
+                        Console.WriteLine("Podaj dlugosc podstawy a:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc podstawy b:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        Console.WriteLine("Podaj dlugosc wysokosci:");
+                        string i = Console.ReadLine();
+                        float j = float.Parse(i);
+                        float k = ((f + h) / 2) * j;
+                        Console.WriteLine("Wynik to: " + k);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string l = Console.ReadLine();
+                        int m = int.Parse(l);
+                        if (m == 1)
+                        {
+
+                        }
+                        else if (m == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 7)
+                    {
+                        Console.WriteLine("Podaj dlugosc promienia:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        double g = 3.14;
+                        double h = (f * f) * g;
+                        Console.WriteLine("Wynik to: " + h);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string i = Console.ReadLine();
+                        int j = int.Parse(i);
+                        if (j == 1)
+                        {
+
+                        }
+                        else if (j == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 8)
+                {
+                    Console.WriteLine("Obwod czego chcialbys/chcialabys obliczyc?");
+                    Console.WriteLine("1.) Kwadrat");
+                    Console.WriteLine("2.) Prostokat");
+                    Console.WriteLine("3.) Trojkat");
+                    Console.WriteLine("4.) Romb");
+                    Console.WriteLine("5.) Rownoleglobok");
+                    Console.WriteLine("6.) Trapez");
+                    Console.WriteLine("7.) Kolo");
+                    Console.WriteLine("Twoj wybor to:");
+                    string d = Console.ReadLine();
+                    int c = int.Parse(d);
+                    if (c == 1)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        float g = f * 4;
+                        Console.WriteLine("Wynik to:" + g);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string h = Console.ReadLine();
+                        int i = int.Parse(h);
+                        if (i == 1)
+                        {
+
+                        }
+                        else if (i == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+
+                    }
+                    else if (c == 2)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku a:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc boku b:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = (f * 2) + (h * 2);
+                        Console.WriteLine("Wynik to:" + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 3)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku a:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc boku b:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        Console.WriteLine("Podaj dlugosc boku c:");
+                        string i = Console.ReadLine();
+                        float j = float.Parse(i);
+                        float k = f + h + j;
+                        Console.WriteLine("Wynik to:" + k);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string l = Console.ReadLine();
+                        int m = int.Parse(l);
+                        if (m == 1)
+                        {
+
+                        }
+                        else if (m == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 4)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        float g = f * 4;
+                        Console.WriteLine("Wynik to:" + g);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string h = Console.ReadLine();
+                        int i = int.Parse(h);
+                        if (i == 1)
+                        {
+
+                        }
+                        else if (i == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 5)
+                    {
+                        Console.WriteLine("Podaj dlugosc boku a:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc boku b:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = (f * 2) + (h * 2);
+                        Console.WriteLine("Wynik to:" + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 6)
+                    {
+                        Console.WriteLine("Podaj dlugosc krotszej podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj dlugosc dluzszej podstawy:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        Console.WriteLine("Podaj dlugosc pierwszego ramienia:");
+                        string i = Console.ReadLine();
+                        float j = float.Parse(i);
+                        Console.WriteLine("Podaj dlugosc drugiego ramienia:");
+                        string k = Console.ReadLine();
+                        float l = float.Parse(k);
+                        float m = f + h + j + l;
+                        Console.WriteLine("Wynik to:" + m);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string n = Console.ReadLine();
+                        int o = int.Parse(n);
+                        if (o == 1)
+                        {
+
+                        }
+                        else if (o == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 7)
+                    {
+                        Console.WriteLine("Podaj dlugosc promienia:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        double g = 3.14;
+                        double h = (f * f) * g;
+                        Console.WriteLine("Wynik to: " + h);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string i = Console.ReadLine();
+                        int j = int.Parse(i);
+                        if (j == 1)
+                        {
+
+                        }
+                        else if (j == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 9)
+                {
+                    Console.WriteLine("Objetosc czego chcialbys/chcialabts obliczyc?");
+                    Console.WriteLine("1.)Prostopadloscianu");
+                    Console.WriteLine("2.)Szescianu");
+                    Console.WriteLine("3.)Ostroslupa");
+                    Console.WriteLine("4.)Walca");
+                    Console.WriteLine("5.)Stozka");
+                    Console.WriteLine("6.)Kuli");
+                    Console.WriteLine("Twoj wybor to:");
+                    string d = Console.ReadLine();
+                    int c = int.Parse(d);
+                    if (c == 1)
+                    {
+                        Console.WriteLine("Podaj pierwsza krawedz podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj druga krawedz podstawy:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        Console.WriteLine("Podaj krawedz sciany:");
+                        string i = Console.ReadLine();
+                        float j = float.Parse(i);
+                        float k = f * h * j;
+                        Console.WriteLine("Wynik to:" + k);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string l = Console.ReadLine();
+                        int m = int.Parse(l);
+                        if (m == 1)
+                        {
+
+                        }
+                        else if (m == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 2)
+                    {
+                        Console.WriteLine("Podaj krawedz szescianu:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        float g = f * f * f;
+                        Console.WriteLine("Wynik to:" + g);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string h = Console.ReadLine();
+                        int i = int.Parse(h);
+                        if (i == 1)
+                        {
+
+                        }
+                        else if (i == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 3)
+                    {
+                        Console.WriteLine("Podaj pole podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj wysokosc:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        float i = (f * h) / 3;
+                        Console.WriteLine("Wynik to:" + i);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string j = Console.ReadLine();
+                        int k = int.Parse(j);
+                        if (k == 1)
+                        {
+
+                        }
+                        else if (k == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 4)
+                    {
+                        Console.WriteLine("Podaj promien podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj wysokosc:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        double i = 3.14;
+                        double j = f * f * h * i;
+                        Console.WriteLine("Wynik to:" + j);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string k = Console.ReadLine();
+                        int l = int.Parse(k);
+                        if (l == 1)
+                        {
+
+                        }
+                        else if (l == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 5)
+                    {
+                        Console.WriteLine("Podaj promien podstawy:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        Console.WriteLine("Podaj wysokosc:");
+                        string g = Console.ReadLine();
+                        float h = float.Parse(g);
+                        double i = 3.14;
+                        double j = (f * f * h * i) / 3;
+                        Console.WriteLine("Wynik to:" + j);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string k = Console.ReadLine();
+                        int l = int.Parse(k);
+                        if (l == 1)
+                        {
+
+                        }
+                        else if (l == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else if (c == 6)
+                    {
+                        Console.WriteLine("Podaj promien kuli:");
+                        string e = Console.ReadLine();
+                        float f = float.Parse(e);
+                        double g = 3.14;
+                        double h = (((f * f * f) * 4) / 3) * g;
+                        Console.WriteLine("Wynik to:" + h);
+                        Console.WriteLine("Czy chcesz kontynuowac?");
+                        Console.WriteLine("1.) Tak");
+                        Console.WriteLine("2.) Nie");
+                        string i = Console.ReadLine();
+                        int j = int.Parse(i);
+                        if (j == 1)
+                        {
+
+                        }
+                        else if (j == 2)
+                        {
+                            x = 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wprowadzono bledne dane :/");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else if (a == 10)
+                {
+                    Console.WriteLine("Podaj liczbe stojaca przed x^1:");
+                    string c = Console.ReadLine();
+                    float d = float.Parse(c);
+                    Console.WriteLine("Podaj liczbe stojaca przed x^0:");
+                    string e = Console.ReadLine();
+                    float f = float.Parse(e);
+                    Console.WriteLine("Twoja funkcja to: y= " + d + "x^1 + " + f);
+                    Console.WriteLine("Podaj 'x':");
+                    string g = Console.ReadLine();
+                    float h = float.Parse(g);
+                    float i = (d * h) + f;
+                    Console.WriteLine("'y' dla podanej funkcji to:" + i);
+                    Console.WriteLine("Czy chcesz kontynuować?");
+                    Console.WriteLine("1.) Tak");
+                    Console.WriteLine("2.) Nie");
+                    string j = Console.ReadLine();
+                    int k = int.Parse(j);
+                    if (k == 1)
+                    {
+
+                    }
+                    else if (k == 2)
+                    {
+                        x = 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadzono bledne dane :/");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Wprowadzono bledne dane :/");
+                }
+            } while (x == 0);
+        }
+    }
+}
